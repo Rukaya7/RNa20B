@@ -1,0 +1,13 @@
+body {
+    background-color:rgb(252, 222, 252);
+}
+h1{
+    font-family: Arial;
+    font-size: 22px;
+}
+.easy{
+    color: darkgray;
+}
+.mig {
+    border:groove;
+}
