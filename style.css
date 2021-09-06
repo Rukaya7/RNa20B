@@ -7,7 +7,15 @@ h1{
 }
 .easy{
     color: darkgray;
+    text-align:center;
+    background-color: aliceblue;
 }
 .mig {
     border:groove;
+}
+.tankar{
+    text-align: right;
+}
+a {
+    text-decoration: none;
 }
