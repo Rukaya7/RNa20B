@@ -1,15 +1,30 @@
-tbody tr:nth-child(1){
-    background-color: gold;  
+
+  table{
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 50%;
+    font font-family: arial;
   }
-  tbody tr:nth-child(3){
-    background-color: gold;  
+  .left{
+    text-align: left;
   }
-  tbody tr:nth-child(2){
-    background-color: rgb(202, 47, 27);  
+  .right{
+    text-align: right;
   }
-  tbody tr:nth-child(4){
-    background-color: rgb(202, 47, 27);  
+  td, th{
+    text-align: center;
+    padding: 7px;
+    width: 25%;
   }
-  thead tr:nth-child(1) {
-      background-color: rgba(237, 230, 230, 0.974);
+  table th, td{
+    border: 1px solid black
+  }
+  tr:nth-child(odd){
+    background-color: gainsboro;
+  }
+  tr:nth-child(even){
+    background-color: darkgrey;
+  }
+  th{
+    background-color: rgb(219, 179, 179);
   }
