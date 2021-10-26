@@ -1,0 +1,57 @@
+body{
+    background-color: rgb(247, 236, 176);
+    text-align: center;
+}
+h1{
+    background-color: white;
+}
+table{
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 50%;
+    font font-family: arial;
+}
+table th, td{
+    border: 1px solid black
+}
+td, th{
+    text-align: center;
+    padding: 7px;
+    width: 25%;
+  }
+  table th, td{
+    border: 1px solid black
+  }
+  tr:nth-child(odd){
+    background-color: gainsboro;
+  }
+  tr:nth-child(even){
+    background-color: darkgrey;
+  }
+  th{
+    background-color: rgb(231, 194, 114);
+  }
+.left {
+    text-align: left;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 50px auto;
+    background-color: grey;
+    padding: 10px;
+}
+.grid-item {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+  }
+  h1, h2{
+    font-style: italic;
+  }
+  img {
+    height: 20%;
+    width: 20%;
+    float: right;
+  }
