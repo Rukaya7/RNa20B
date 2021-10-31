@@ -1,0 +1,14 @@
+body{
+    background-color:rgb(253, 253, 215);
+}
+.easy, h1{
+    text-align: center;
+}
+img{
+    height: 10%;
+    width: 10%;
+    float: right;
+}
+h1{
+    text-decoration: underline;
+}

@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(255, 217, 49);
+    background-size: cover;
+    color:white;
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+}
+img {
+    height: 40%;
+    width: 40%;
+}
+h1{
+    font-family: Georgia;
+    font-size: 22px;
+}
+.mig{
+    border: groove;
+    background-color: rgb(56, 40, 11);
+}

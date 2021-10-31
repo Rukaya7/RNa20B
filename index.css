@@ -9,7 +9,6 @@ table{
     border-spacing: 0;
     border-collapse: collapse;
     width: 50%;
-    font font-family: arial;
 }
 table th, td{
     border: 1px solid black
@@ -40,6 +39,8 @@ td, th{
     background-color: grey;
     padding: 10px;
 }
+
+
 .grid-item {
     background-color: white;
     border: 1px solid rgba(0, 0, 0, 0.8);
@@ -49,6 +50,10 @@ td, th{
   }
   h1, h2{
     font-style: italic;
+  }
+  h2{
+    font-style: italic;
+    text-decoration: underline wavy;
   }
   img {
     height: 20%;
