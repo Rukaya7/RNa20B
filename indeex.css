@@ -1,7 +1,6 @@
 h1 {
     font-family: Georgia;
     text-align: center;
-    text-decoration: dotted;
 }
 h4 {
   text-align: center;
@@ -53,3 +52,41 @@ table{
   input [type="submit"] {
     margin-left: 134px;
   }
+#historien tr:nth-child(odd){
+  background-color: rgb(129, 129, 129);
+}
+#historien tr:nth-child(even){
+    background-color: rgb(225, 225, 233);
+  }
+  #historien img{
+    width: 400px;
+}  
+fieldset {
+  padding: 1em;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+legend {
+  font-size: larger;
+}
+input[type="submit"] {
+  display: block;
+  margin: auto;
+}
+.kontakt .logo {
+  width: 146px;
+  height: 123px;
+}
+.menu {
+  margin: 30px;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  background-color: rgb(243, 234, 234);
+  column-width: auto;
+}
+.menu li {
+  display: inline;
+  padding: 0 20px 0 0;
+  list-style-type: none;
+}

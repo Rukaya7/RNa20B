@@ -1,24 +1,62 @@
-<!DOCTYPE html>
-<html lang="sv">
+<!DOCTYPE html>  
+<html lang="sv"> 
     <head>
         <meta charset="UTF-8">
         <title>kontakt</title>
         <link href="indeex.css" rel="stylesheet">
     </head>
+    <body class="kontakt">
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Startsida</a></li>
+                <li><a href="historien.html">Historien</a></li>
+                <li><a href="grundstilar">Grundstilar</a></li>
+                <li><a href="grader.html">Gradering</a></li>
+            </ul>
+        </nav>
     <header>
         <h1>Kontakta oss</h1>
-        <h4>Här kan ni kontakta oss om ni har frågor</h2>
+        <h4>Här kan du ställa dina frågor till oss</h4>
     </header>
-    <form action="login.php" method="post">
-        <p>
-            <label for="un">Användarnamn:</label>
-            <input name="username" id="un" required />
-        </p>
-        <p>
-            <label for="pw">Lösenord:</label>
-            <input name="password" type="password" id="pw" required />
-        </p>
-        <p>
-            <input type="submit" value="logga in" />
-        </p>
-    </form>
+    <div role="main">
+    <form action="contact.php" method="post">
+        <fieldset>
+            <legend>Vem är du?</legend>
+            <p>
+                <label for="uname">Namn:</label>
+                <label for="uname" class="reqfield">
+                    <strong class="required" title="obligatorisk uppgift">*</strong>
+                </label>
+            <input type="text" name="uname" id="uname" required
+                placeholder="Förnamn Efternamn"/>
+            </p>
+            <p>
+                <label for="umail">Mejladress:</label>
+                <label for="umail" class="reqfield">
+                    <strong class="required" title="Obligatorisk uppgift">*</strong>
+                </label>
+                <input type="email" name="umail" id="umail" required
+                placeholder="foo@bar.com" />
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Meddelande</legend>
+            <p>
+                <label for="mmessage">Text:</label>
+                <label for="mmessage" class="reqfield">
+                    <strong class="requierd" title="Obligatorisk uppgift">*</strong>
+                </label>
+                <textarea id="mmessage" name="mmessage" required
+                placeholder="skriv ditt meddelande. Minst 25 tecken."></textarea>
+            </p>
+        </fieldset>
+        <fieldset>
+            <p>
+                <input value="skicka" type="submit"/>
+            </p>
+            <input name="prevent_multiple_submits"
+            value="{$random_string}" type="hidden">
+        </fieldset>
+    </form> <!--Valideringen är klar!-->
+    </div>
+    </body>
