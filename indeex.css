@@ -83,7 +83,6 @@ input[type="submit"] {
   list-style: none;
   text-align: center;
   background-color: rgb(243, 234, 234);
-  column-width: auto;
 }
 .menu li {
   display: inline;
