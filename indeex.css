@@ -73,6 +73,16 @@ input[type="submit"] {
   display: block;
   margin: auto;
 }
+textarea {
+  height: 5em;
+  resize: vertical;
+}
+input[type=text],
+input[type=email],
+textarea {
+  flex: 1 1 25ch;
+  max-width: 300px;
+}
 .kontakt .logo {
   width: 146px;
   height: 123px;
