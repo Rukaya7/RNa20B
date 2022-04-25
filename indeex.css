@@ -1,0 +1,55 @@
+h1 {
+    font-family: Georgia;
+    text-align: center;
+    text-decoration: dotted;
+}
+h4 {
+  text-align: center;
+  color: grey;
+}
+body{
+    background-color: rgb(219, 213, 202);
+    text-align: left;
+}
+section{
+    text-align: left;
+}
+
+table{
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 30%;
+    font-family: arial;
+  }
+  .left{
+    text-align: left;
+  }
+  .right{
+    text-align: right;
+  }
+  td, th{
+    text-align: center;
+    padding: 5px;
+    width: 25%;
+  }
+  table th, td{
+    border: 1px solid black
+  }
+  tr:nth-child(odd){
+    background-color: gainsboro;
+  }
+  tr:nth-child(even){
+    background-color: darkgrey;
+  }
+  th{
+    background-color: darkgrey;
+  }
+  label {
+    display: inline-block;
+    text-align: left;
+    padding-right: 10px;
+    width: 120px;
+  }
+  input [type="submit"] {
+    margin-left: 134px;
+  }

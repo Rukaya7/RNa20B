@@ -60,3 +60,12 @@ td, th{
     width: 20%;
     float: right;
   }
+  label {
+    display: inline-block;
+    text-align: right;
+    padding-right: 10px;
+    width: 120px;
+  }
+  input [type="submit"] {
+    margin-left: 134px;
+  }
