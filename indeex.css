@@ -77,25 +77,33 @@ textarea {
   height: 5em;
   resize: vertical;
 }
-input[type=text],
-input[type=email],
-textarea {
-  flex: 1 1 25ch;
-  max-width: 300px;
-}
 .kontakt .logo {
   width: 146px;
   height: 123px;
 }
 .menu {
-  margin: 30px;
-  padding: 0;
+  margin: 10px; 
+  padding: 30px;
   list-style: none;
   text-align: center;
-  background-color: rgb(243, 234, 234);
+  background-color: rgb(56, 53, 53);
 }
 .menu li {
   display: inline;
   padding: 0 20px 0 0;
   list-style-type: none;
+}
+nav ul li a{
+  padding: 0.25em 1em;
+  text-decoration: double;
+  background-color: rgb(211, 210, 224);
+  color: black;
+  border: 2px solid black;
+  border-top-left-radius: 1em 1em;
+  border-top-right-radius: 1em 1em;
+}
+nav ul li a:hover, nav ul li a:focus {
+  color: black;
+  background-color: white;
+  font-weight: bold;
 }
