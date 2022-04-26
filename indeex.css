@@ -10,10 +10,13 @@ body{
     background-color: rgb(219, 213, 202);
     text-align: left;
 }
-section{
-    text-align: left;
+article {
+  float: center;
+  padding: 20px;
+  width: 40%;
+  background-color: #bdbdbd;
+  height: 300px; 
 }
-
 table{
     border-spacing: 0;
     border-collapse: collapse;
@@ -61,7 +64,8 @@ table{
   #historien img{
     width: 400px;
 }  
-fieldset {
+#historien 
+  fieldset {
   padding: 1em;
   border-radius: 10px;
   margin-bottom: 10px;
@@ -106,4 +110,19 @@ nav ul li a:hover, nav ul li a:focus {
   color: black;
   background-color: white;
   font-weight: bold;
+}
+footer {
+  background-color: #121315;
+  color: #a7a7a7;
+  text-align: center;
+  color: white;
+}
+iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  float: right;
+  margin-left: 0px 0px 0px 30px;
 }
