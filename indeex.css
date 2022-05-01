@@ -18,7 +18,6 @@ article {
   height: 300px; 
 }
 table{
-    border-spacing: 0;
     border-collapse: collapse;
     width: 30%;
     font-family: arial;
@@ -31,7 +30,7 @@ table{
   }
   td, th{
     text-align: center;
-    padding: 5px;
+    padding: 1.1rem 1.8rem;
     width: 25%;
   }
   table th, td{
@@ -41,10 +40,11 @@ table{
     background-color: gainsboro;
   }
   tr:nth-child(even){
-    background-color: darkgrey;
+    background-color: darkgray;
+
   }
   th{
-    background-color: darkgrey;
+    background-color: hsla(180, 1%, 39%, 0.753)
   }
   label {
     display: inline-block;
@@ -108,11 +108,11 @@ nav ul li a{
 }
 nav ul li a:hover, nav ul li a:focus {
   color: black;
-  background-color: white;
+  background-color: hsl(0, 100%, 100%);
   font-weight: bold;
 }
 footer {
-  background-color: rgb(56, 53, 53);
+  background-color: rgba(10, 10, 10, 0.562);
   color: #a7a7a7;
   text-align: center;
   color: white;
