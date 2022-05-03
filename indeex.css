@@ -1,6 +1,13 @@
 h1 {
     font-family: Georgia;
     text-align: center;
+    color: #535353;
+    ;
+}
+h1::first-letter{
+  color: black;
+  text-decoration: overline;
+
 }
 h4 {
   text-align: center;
@@ -127,4 +134,7 @@ iframe {
 img {
   float: right;
   margin-left: 0px 0px 0px 30px;
+}
+.logo {
+  float: right;
 }
