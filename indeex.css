@@ -1,8 +1,7 @@
 h1 {
-    font-family: Georgia;
-    text-align: center;
-    color: #535353;
-    ;
+  font-family: Georgia;
+  text-align: center;
+  color: #535353;
 }
 h1::first-letter{
   color: black;
@@ -14,8 +13,8 @@ h4 {
   color: grey;
 }
 body{
-    background-color: rgb(219, 213, 202);
-    text-align: left;
+  background-color: rgb(219, 213, 202);
+  text-align: left;
 }
 article {
   float: center;
@@ -25,51 +24,50 @@ article {
   height: 300px; 
 }
 table{
-    border-collapse: collapse;
-    width: 30%;
-    font-family: arial;
-  }
-  .left{
-    text-align: left;
-  }
-  .right{
-    text-align: right;
-  }
-  td, th{
-    text-align: center;
-    padding: 1.1rem 1.8rem;
-    width: 25%;
-  }
-  table th, td{
-    border: 1px solid black
-  }
-  tr:nth-child(odd){
-    background-color: gainsboro;
-  }
-  tr:nth-child(even){
-    background-color: darkgray;
-
-  }
-  th{
-    background-color: hsla(180, 1%, 39%, 0.753)
-  }
-  label {
-    display: inline-block;
-    text-align: left;
-    padding-right: 10px;
-    width: 120px;
-  }
-  input [type="submit"] {
-    margin-left: 134px;
-  }
+  border-collapse: collapse;
+  width: 30%;
+  font-family: arial;
+}
+.left{
+  text-align: left;
+}
+.right{
+  text-align: right;
+}
+td, th{
+  text-align: center;
+  padding: 1.1rem 1.8rem;
+  width: 25%;
+}
+table th, td{
+  border: 1px solid black
+}
+tr:nth-child(odd){
+  background-color: gainsboro;
+}
+tr:nth-child(even){
+  background-color: darkgray;
+}
+th{
+  background-color: hsla(180, 1%, 39%, 0.753)
+}
+label {
+  display: inline-block;
+  text-align: left;
+  padding-right: 10px;
+  width: 120px;
+}
+input [type="submit"] {
+  margin-left: 134px;
+}
 #historien tr:nth-child(odd){
   background-color: rgb(129, 129, 129);
 }
 #historien tr:nth-child(even){
-    background-color: rgb(225, 225, 233);
-  }
-  #historien img{
-    width: 400px;
+  background-color: rgb(225, 225, 233);
+}
+#historien img{
+  width: 400px;
 }  
 #historien 
   fieldset {
@@ -119,7 +117,7 @@ nav ul li a:hover, nav ul li a:focus {
   font-weight: bold;
 }
 footer {
-  background-color: rgba(10, 10, 10, 0.562);
+  background-color: rgba(63, 62, 62, 0.562);
   color: #a7a7a7;
   text-align: center;
   color: white;
@@ -133,8 +131,9 @@ iframe {
 }
 img {
   float: right;
-  margin-left: 0px 0px 0px 30px;
+  margin-right: 10px 10px 0px 30px;
 }
-.logo {
-  float: right;
+.belts {
+  width: 100px;
+  float: center;
 }
