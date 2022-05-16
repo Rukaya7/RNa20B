@@ -6,7 +6,6 @@ h1 {
 h1::first-letter{
   color: black;
   text-decoration: overline;
-
 }
 h4 {
   text-align: center;
@@ -136,4 +135,10 @@ img {
 .belts {
   width: 100px;
   float: center;
+}
+.text {
+  position: absolute;
+  right: 200px;
+  width: 400px;
+  top: 400px;
 }
