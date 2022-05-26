@@ -12,7 +12,7 @@
                 <li><a href="historien.html">Historien</a></li>
                 <li><a href="grundstil.html">Grundstilar</a></li>
                 <li><a href="grader.html">Gradering</a></li>
-                <li><a href="väst.html">Karate i väst</a></li>
+                <li><a href="logga.html">Logga in</a></li>
             </ul>
         </nav>
     <header>
@@ -21,12 +21,13 @@
     </header>
     <div role="main">
     <form action="contact.php" method="post">
+            <input type="datetime-local"> <!--Exakt datum och tid på när man har kontaktat-->
         <fieldset>
             <legend>Vem är du?</legend>
             <p>
                 <label for="uname">Namn:</label>
                 <label for="uname" class="reqfield">
-                    <strong class="required" title="obligatorisk uppgift">*</strong>
+                    <strong class="required" title="obligatorisk uppgift">*</strong> <!--Namn är obligatoriskt att skriva-->
                 </label>
             <input type="text" name="uname" id="uname" required
                 placeholder="Förnamn Efternamn"/>
@@ -34,10 +35,10 @@
             <p>
                 <label for="umail">Mejladress:</label>
                 <label for="umail" class="reqfield">
-                    <strong class="required" title="Obligatorisk uppgift">*</strong>
+                    <strong class="required" title="Obligatorisk uppgift">*</strong> <!--Mejladress, obligatoriskt-->
                 </label>
                 <input type="email" name="umail" id="umail" required
-                placeholder="foo@bar.com" />
+                placeholder="foo@bar.com" /> <!--Exempel på en random email-->
             </p>
         </fieldset>
         <fieldset>
@@ -45,10 +46,57 @@
             <p>
                 <label for="mmessage">Text:</label>
                 <label for="mmessage" class="reqfield">
-                    <strong class="requierd" title="Obligatorisk uppgift">*</strong>
+                    <strong class="requierd" title="Obligatorisk uppgift">*</strong> <!--Text, obligatoriskt-->
                 </label>
                 <textarea id="mmessage" name="mmessage" required
                 placeholder="skriv ditt meddelande. Minst 25 tecken."></textarea>
+            </p>
+        </fieldset>
+        <h5>- Du behöver absolut inte svara på frågorna nedan!</h5>
+        <fieldset>
+            <legend>Karate checkbox :)</legend>
+            <p>
+                <input type="checkbox" name="karate" value="Jag älskar karate" id="älskar" />
+                <label for="älskar">Jag älskar karate</label>
+            </p>
+            <p>
+                <input type="checkbox" name="karate" value="Jag är proffs på karate" id="proffs"/>
+                <label for="proffs">Jag är proffs på karate</label>
+            </p>
+            <p>
+                <input type="checkbox" name="karate" value="Jag kan mycket fakta karate" id="fakta"/>
+                <label for="fakta">Jag kan mycket fakta om karate</label>
+            </p>
+            <p>
+                <input type="checkbox" name="karate" value="Jag har nyligen börjat karate" id="karate"/>
+                <label for="karate">Jag har nyligen börjat karate</label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Vad betyder karate? ^-^</legend>
+            <p>
+                <label for="karate">Välj ett alternativ:</label>
+                <select name="Välj">
+                    <option value="pretty hand" selected>Pretty hand</option>
+                    <option value="dirty hand">Dirty hand</option>
+                    <option value="empty hand">Empty hand</option>
+                    <option value="luxury hand">Luxury hand</option>
+                </select>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Har informationen i denna sidan hjälpt dig?</legend>
+            <p>
+                <input type="radio" name="Hjälp" value="Ja, mycket!" id="Ja" />
+                <label for="Ja">Ja, Mycket!</label>
+            </p>
+            <p>
+                <input type="radio" name="Hjälp" value="Ganska!" id="Ganska" />
+                <label for="Ganska">Ganska!</label>
+            </p>
+            <p>
+                <input type="radio" name="Hjälp" value="Nej, tyvärr!" id="Nej" />
+                <label for="Nej">Nej, tyvärr!</label>
             </p>
         </fieldset>
         <fieldset>
@@ -67,4 +115,4 @@
         </p>    
     </footer>
     </body>
-</html> <!--Valideringen är klar!-->
+</html> 
