@@ -17,13 +17,12 @@ body {
   text-align: left;
 }
 article {
-  float: center;
   padding: 20px;
   width: 40%;
   background-color: #bdbdbd;
   height: 300px; 
 }
-.artikel {
+.artikel { 
   position: absolute;
   top: 204px;
   right: 14px;
@@ -32,12 +31,6 @@ table{
   border-collapse: collapse;
   width: 30%;
   font-family: arial;
-}
-.left{
-  text-align: left;
-}
-.right{
-  text-align: right;
 }
 td, th{
   text-align: center;
@@ -135,8 +128,7 @@ img {
   margin-right: 10px 10px 0px 30px;
 }
 .belts {
-  width: 100px;
-  float: center;
+  width: 100px; /*Minskar utsträckningen av png bälterna*/
 }
 .text {
   position: absolute;
