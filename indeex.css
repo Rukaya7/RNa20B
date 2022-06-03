@@ -29,6 +29,12 @@ article {
   bottom: 0%;
   right: 14px;
 }
+#historien img{
+  width: 400px;
+}  
+section > p {
+  background-color: rgb(231, 231, 218);
+}
 table{
   margin-left: 150px;
   border-collapse: collapse; /*Tabellens kantlinjer läggs ovanpå varandra så att avståndet mellan de ska tas bort*/
@@ -60,21 +66,6 @@ label {
 input [type="submit"] {
   margin-left: 134px;
 }
-#historien tr:nth-child(odd){
-  background-color: rgb(129, 129, 129);
-}
-#historien tr:nth-child(even){
-  background-color: rgb(225, 225, 233);
-}
-#historien img{
-  width: 400px;
-}  
-#historien 
-  fieldset {
-  padding: 1em;
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
 legend {
   font-size: larger;
 }
@@ -85,6 +76,16 @@ input[type="submit"] {
 textarea {
   height: 5em;
   resize: vertical;
+}
+input:checked {
+  height: 18px;
+  width: 18px;
+}
+input:optional {
+  background-color: rgb(165, 165, 165);
+}
+input:required {
+  background-color: rgb(240, 240, 240);
 }
 .kontakt .logo {
   width: 146px;
@@ -140,6 +141,7 @@ img {
   width: 400px;
   top: 400px;
 }
+/*Youtube videon blir större när muspekaren sväver över*/
 iframe:hover {
   transform: scale(1.3);
 }
