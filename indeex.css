@@ -1,13 +1,15 @@
 h1 {
   font-size: 5vh;
-  font-family: Georgia;
+  font-family: "BebasNeue";
   text-align: center;
   color: #535353;
 }
+/*Första bokstaven i h1 ska ha en svart färg och en linje över*/
 h1::first-letter{
   color: black;
   text-decoration: overline;
 }
+/*Regler för gradient*/
 .Gradient {
   height: 60px;
   background-color: rgb(207, 222, 226); /* För browsers som inte supportar gradienter */
@@ -36,20 +38,37 @@ article {
 }
 /*Regler för den andra artikeln som innehåller SVG-filen*/
 .artikel { 
-  position: absolute; /*Artikel 2 är placerad i samma position som artikel 1 fast i den högra sidan*/
-  bottom: 0%;
-  right: 14px;
+  float: right;
+  padding: 20px;
+  width: 40%;
+  background-color: #bdbdbd;
+  height: 300px;
+}
+/*Barnselektorn väljer alla element som är barn till .all-fakta - elementen i detta fall är h2 och .fakta*/
+.all-fakta > h2, .fakta {
+  margin: 10px; /*Marginal för att skapa ett utrymme på 10px runt elementen*/
+  padding: 5px; /*Padding för att skapa ett utrymme på 5px runt elementens innehåll*/
+}
+.fakta {
+  height: 80px;
+  background-color: white;
+}
+/*Barnselektorn väljer alla element som är barn till .fakta - elementen i detta fall är h3 och p*/
+.fakta > h3, p {
+  margin: 4px; 
+  font-size: 90%;
 }
 #historien img{
   width: 400px;
-}  
+}
+/*Barnselektorn väljer p som barn element till section*/ 
 section > p {
   background-color: rgb(231, 231, 218);
 }
 table{
   margin-left: 150px;
   border-collapse: collapse; /*Tabellens kantlinjer läggs ovanpå varandra så att avståndet mellan de ska tas bort*/
-  font-family: arial;
+  font-family: "BebasNeue";
 }
 td, th{
   text-align: center;
@@ -129,6 +148,7 @@ nav ul li a:hover, nav ul li a:focus {
   background-color: hsl(0, 100%, 100%);
   font-weight: bold;
 }
+/*Regler för youtube videon*/
 iframe {
   display: block;
   margin-left: auto;
@@ -140,7 +160,6 @@ iframe {
 }
 img {
   float: right;
-  margin-right: 10px 10px 0px 30px;
 }
 /*Minskar utsträckningen av png bälterna*/
 .belts {
@@ -184,4 +203,36 @@ footer {
   text-align: center;
   color: white;
   border: solid 2px;
+}
+/*Regler för kolumn 1 i källor*/
+.kolumn1 {
+  float: left; /*Utan float left skulle kolumnenerna inte sättas bredvid varandra*/
+  width: 31.8%; /*Utsträckningen för varje kolumn är 31.8%*/
+  padding: 10px;
+  height: 200px;
+  background-color: #aaa;
+}
+/*Regler för kolumn 2 i källor*/
+.kolumn2 {
+  float: left;
+  width: 31.8%;
+  padding: 10px;
+  height: 200px;
+  background-color: #bbb;
+}
+/*Regler för kolumn 3 i källor*/
+.kolumn3 {
+  float: left;
+  width: 31.8%;
+  padding: 10px;
+  height: 200px;
+  background-color: #ccc;
+}
+/*Infoga något efter innehållet i .row*/
+.row::after {
+  content: "- Fyra källor har använts"; /*Texten efter innehållet*/
+}
+@font-face {
+  font-family: "BebasNeue";
+  src: url("BebasNeue-Regular.ttf");
 }
