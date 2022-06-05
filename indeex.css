@@ -1,6 +1,6 @@
 h1 {
   font-size: 5vh;
-  font-family: "BebasNeue";
+  font-family: Arial;
   text-align: center;
   color: #535353;
 }
@@ -15,6 +15,11 @@ h1::first-letter{
   background-color: rgb(207, 222, 226); /* För browsers som inte supportar gradienter */
   background-image: linear-gradient(180deg, white, rgb(177, 174, 174));
   font-size: 36px;
+}
+/*CSS regler för SVG filen som kommer föreställa en reklam*/
+svg {
+  width: 500px;
+  height: 200px;
 }
 /*Stycket under rubriken ska vara i mitten och ha en grå färg*/
 .under {
@@ -68,7 +73,7 @@ section > p {
 table{
   margin-left: 150px;
   border-collapse: collapse; /*Tabellens kantlinjer läggs ovanpå varandra så att avståndet mellan de ska tas bort*/
-  font-family: "BebasNeue";
+  font-family: Arial;
 }
 td, th{
   text-align: center;
@@ -155,8 +160,11 @@ iframe {
   margin-right: auto;
   width: 560px;
   height: 315px;
-  transform: scaleY(0,9);
   transition: 2s;
+}
+/*Youtube videon blir större när muspekaren sväver över*/
+iframe:hover {
+  transform: scale(1.3);
 }
 img {
   float: right;
@@ -170,39 +178,6 @@ img {
   right: 200px;
   width: 400px;
   top: 400px;
-}
-/*Youtube videon blir större när muspekaren sväver över*/
-iframe:hover {
-  transform: scale(1.3);
-}
-/*Obesökt länk med blå färg*/
-a:link {
-  color: blue;
-}
-/*Besökt länk ska ha en annan färg än obesökt länk*/
-a:visited {
-  color: rgb(112, 4, 112);
-}
-/*Bakgrund färgen för input element som just nu har fokus, alltså reagerar på tangentbordet*/
-input:focus {
-  background-color: rgb(221, 221, 205); 
-}
-/*Regel för länkar som har både fokus och muspekaren sväver över*/
-a:focus, a:hover { 
-  font-family: monospace; 
-}
-/*Regel för länkar i det ögonblick de aktiveras*/
-a:active { 
-  font-family: monospace;
-}
-h3.karate {
-  text-transform: uppercase;
-}
-footer {
-  background-color: rgba(63, 62, 62, 0.562);
-  text-align: center;
-  color: white;
-  border: solid 2px;
 }
 /*Regler för kolumn 1 i källor*/
 .kolumn1 {
@@ -228,11 +203,33 @@ footer {
   height: 200px;
   background-color: #ccc;
 }
-/*Infoga något efter innehållet i .row*/
+/*Infoga texten efter innehållet i .row*/
 .row::after {
-  content: "- Fyra källor har använts"; /*Texten efter innehållet*/
+  content: "- Fyra källor har använts";
 }
-@font-face {
-  font-family: "BebasNeue";
-  src: url("BebasNeue-Regular.ttf");
+/*Obesökt länk med blå färg*/
+a:link {
+  color: blue;
+}
+/*Besökt länk ska ha en annan färg än obesökt länk*/
+a:visited {
+  color: rgb(112, 4, 112);
+}
+/*Bakgrund färgen för input element som just nu har fokus, alltså reagerar på tangentbordet*/
+input:focus {
+  background-color: rgb(221, 221, 205); 
+}
+/*Regel för länkar som har både fokus och muspekaren sväver över*/
+a:focus, a:hover { 
+  font-family: monospace; 
+}
+/*Regel för länkar i det ögonblick de aktiveras*/
+a:active { 
+  font-family: monospace;
+}
+footer {
+  background-color: rgba(63, 62, 62, 0.562);
+  text-align: center;
+  color: white;
+  border: solid 2px;
 }
